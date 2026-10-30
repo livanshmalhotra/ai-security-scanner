@@ -1,0 +1,114 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Environment files - never commit these
+.env
+.env.*
+!.env.example
+!.env*.example
+
+# Secrets, keys and credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+id_rsa*
+credentials*.json
+service-account*.json
+secrets.json
+
+# Local databases (scan history used to be SQLite)
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Deploy tool folders
+.vercel/
+.railway/
+.netlify/
+
+# Temp folders
+tmp/
+temp/
+
+# Node
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# VS Code extension (vscode-extension/): bundle, compiled tests, packages, test VS Code download
+vscode-extension/dist/
+vscode-extension/out/
+*.vsix
+.vscode-test/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor temp files
+*.swp
+*~
+
+# IDE
+.vscode/
+.idea/
+# ...except the extension's own F5 launch/build config
+!vscode-extension/.vscode/
+
+# ML datasets, processed data and trained models (large)
+datasets/
+ml/data/
+# ignore model files but keep each run's small metrics.json for comparing runs
+ml/models/**
+!ml/models/**/
+!ml/models/**/metrics.json
+# model weights / checkpoints anywhere in the repo
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.joblib
+*.pkl
+# experiment tracking and HF caches
+wandb/
+mlruns/
+runs/
+lightning_logs/
+.cache/huggingface/
+
+# Scan history database
+backend/data/
+
+# Scanner outputs (CLI / CI: cli.py scan --sarif/--json/--pdf) and logs
+*.sarif
+results.json
+security-report*.pdf
+*.log
+
+# Claude local settings
+.claude/settings.local.json
