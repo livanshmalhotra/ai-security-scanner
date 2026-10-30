@@ -1,6 +1,5 @@
 # AI Security Scanner
 
-Official HackFest 2026 repository for team **CodingOwls (T2-17)**.
 
 Paste a public GitHub repository URL and get a readable security report. The scanner
 checks the **code**, the **dependencies** and **hardcoded secrets**, then uses an LLM to
